@@ -33,7 +33,11 @@ logger -t devvm "Success"
 
 sudo apt install -y default-jre
 sudo apt install -y p7zip-full p7zip-rar
+
 sudo snap install notepad-plus-plus
 sudo snap install intellij-idea-community --classic
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 exit 0

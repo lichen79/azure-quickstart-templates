@@ -10,6 +10,7 @@ New-LocalGroup -Name docker-users -Description "Users of Docker Desktop"
 Add-LocalGroupMember -Group 'docker-users' -Member $UserName
 
 choco install docker-desktop git vscode firefox azure-cli -y
+choco install jdk8 7zip googlechrome nodejs intellijidea-community chocolateygui notepadplusplus -y
 
 $trig = New-ScheduledTaskTrigger -AtLogOn 
 $task = New-ScheduledTaskAction -Execute "C:\Program Files\Docker\Docker\Docker Desktop.exe" 

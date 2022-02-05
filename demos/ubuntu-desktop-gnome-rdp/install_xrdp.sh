@@ -30,4 +30,10 @@ sudo apt-get update
 sudo apt-get install -y code
 logger -t devvm "VSCode Installed: $?"
 logger -t devvm "Success"
+
+sudo apt install -y default-jre
+sudo apt install -y p7zip-full p7zip-rar
+sudo snap install notepad-plus-plus
+sudo snap install intellij-idea-community --classic
+
 exit 0

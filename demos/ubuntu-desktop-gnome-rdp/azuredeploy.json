@@ -23,10 +23,10 @@
     },
     "ubuntuOSVersion": {
       "type": "string",
-      "defaultValue": "20_04-lts-gen2",
+      "defaultValue": "pro-20_04-lts-gen2",
       "allowedValues": [
-        "18.04-LTS",
-        "20_04-lts-gen2"        
+        "pro-20_04-lts",
+        "pro-20_04-lts-gen2"        
       ],
       "metadata": {
         "description": "The Ubuntu version for the VM. This will pick a fully patched image of this given Ubuntu version. Allowed values: 12.04.5-LTS, 14.04.5-LTS, 15.10."
@@ -73,7 +73,7 @@
   },
   "variables": {
     "imagePublisher": "Canonical",
-    "imageOffer": "UbuntuServer",
+    "imageOffer": "0001-com-ubuntu-pro-focal",
     "nicName": "myVMNic",
     "nsgName": "myNSG",
     "addressPrefix": "10.0.0.0/16",

@@ -171,6 +171,9 @@
             "apiVersion": "2019-07-01",
             "name": "vsLab",
             "location": "[parameters('location')]",
+            "identity": {
+                "type": "SystemAssigned"
+                },
             "dependsOn": [ 
                 "[resourceId('Microsoft.Storage/storageAccounts', variables('storagename'))]",
                 "[resourceId('Microsoft.Network/networkInterfaces', 'vslab-nic')]"
